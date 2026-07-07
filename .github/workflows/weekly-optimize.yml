@@ -1,0 +1,45 @@
+name: Weekly weight optimization
+
+on:
+  schedule:
+    # 12:00 UTC Saturday — after the week's data has landed
+    - cron: "0 12 * * 6"
+  workflow_dispatch: {}
+
+concurrency:
+  group: weekly-optimize
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Optimize weights
+        working-directory: scripts
+        run: python optimize_weights.py
+
+      - name: Commit updated weights
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/model_weights.json
+          if git diff --cached --quiet; then
+            echo "No weight changes to commit."
+          else
+            git commit -m "chore: weekly weight optimization ($(date -u +%Y-%m-%d))"
+            git push
+          fi
