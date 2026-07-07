@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Secrets — never commit tokens or credentials
+.env
+*.env
+access_token.txt
+kite_access_token.json
+secrets.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local scratch
+scratch/
+*.log
+
+# Claude Code machine-local settings (keep launch.json shared)
+.claude/settings.local.json

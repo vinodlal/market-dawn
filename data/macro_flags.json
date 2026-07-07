@@ -1,0 +1,8 @@
+{
+  "note": "Manually maintained. 'scheduled' events stay IN accuracy scoring (they were foreseeable). Add upcoming known events here; the app surfaces them in the UI if present. Dates are IST calendar dates (YYYY-MM-DD).",
+  "flags": [
+    {"date": "2026-08-06", "type": "scheduled", "label": "RBI MPC policy decision"},
+    {"date": "2026-10-01", "type": "scheduled", "label": "RBI MPC policy decision"},
+    {"date": "2026-12-05", "type": "scheduled", "label": "RBI MPC policy decision"}
+  ]
+}

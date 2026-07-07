@@ -1,0 +1,1259 @@
+{
+  "generated_at": "2026-07-07T15:17:44.005570Z",
+  "summary": {
+    "days": 40,
+    "scored_days": 40,
+    "outliers": 0,
+    "directional_accuracy": 0.727,
+    "overall_hit_rate": 0.975
+  },
+  "days": [
+    {
+      "date": "2026-05-13",
+      "recommendation": "Neutral",
+      "score": 64,
+      "buy_zone": [
+        54230.8,
+        54562.66
+      ],
+      "sell_zone": [
+        54562.66,
+        54732.23
+      ],
+      "active_zone": [
+        54230.8,
+        54732.23
+      ],
+      "prev_close": 54400.36,
+      "actual_open": 54413.04,
+      "actual_close": 55283.32,
+      "daily_move_pct": 1.623,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of support (54,231).",
+        "PCR at 1.08 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "recommendation": "Neutral",
+      "score": 40,
+      "buy_zone": [
+        54639.15,
+        55020.42
+      ],
+      "sell_zone": [
+        55020.42,
+        55401.69
+      ],
+      "active_zone": [
+        54639.15,
+        55401.69
+      ],
+      "prev_close": 55283.32,
+      "actual_open": 55209.68,
+      "actual_close": 55363.54,
+      "daily_move_pct": 0.145,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of resistance (55,402).",
+        "PCR at 1.077 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "recommendation": "Neutral",
+      "score": 56,
+      "buy_zone": [
+        55086.11,
+        55315.46
+      ],
+      "sell_zone": [
+        55315.46,
+        55544.8
+      ],
+      "active_zone": [
+        55086.11,
+        55544.8
+      ],
+      "prev_close": 55363.54,
+      "actual_open": 55381.88,
+      "actual_close": 55094.33,
+      "daily_move_pct": -0.486,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of resistance (55,545).",
+        "PCR at 1.329 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "recommendation": "Neutral",
+      "score": 64,
+      "buy_zone": [
+        54882.76,
+        55257.11
+      ],
+      "sell_zone": [
+        55257.11,
+        55468.69
+      ],
+      "active_zone": [
+        54882.76,
+        55468.69
+      ],
+      "prev_close": 55094.33,
+      "actual_open": 55132.06,
+      "actual_close": 54489.14,
+      "daily_move_pct": -1.098,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 32.8,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of support (54,883).",
+        "PCR at 1.119 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "recommendation": "Neutral",
+      "score": 61,
+      "buy_zone": [
+        54171.59,
+        54694.93
+      ],
+      "sell_zone": [
+        54694.93,
+        55012.47
+      ],
+      "active_zone": [
+        54171.59,
+        55012.47
+      ],
+      "prev_close": 54489.14,
+      "actual_open": 54590.7,
+      "actual_close": 54423.2,
+      "daily_move_pct": -0.121,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.6% of support (54,172).",
+        "PCR at 1.024 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "recommendation": "Neutral",
+      "score": 56,
+      "buy_zone": [
+        54194.71,
+        54408.95
+      ],
+      "sell_zone": [
+        54408.95,
+        54637.43
+      ],
+      "active_zone": [
+        54194.71,
+        54637.43
+      ],
+      "prev_close": 54423.2,
+      "actual_open": 54598.61,
+      "actual_close": 55214.14,
+      "daily_move_pct": 1.453,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of resistance (54,637).",
+        "PCR at 1.066 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "recommendation": "Neutral",
+      "score": 57,
+      "buy_zone": [
+        54735.38,
+        54975.58
+      ],
+      "sell_zone": [
+        54975.58,
+        55454.33
+      ],
+      "active_zone": [
+        54735.38,
+        55454.33
+      ],
+      "prev_close": 55214.14,
+      "actual_open": 55265.5,
+      "actual_close": 55681.46,
+      "daily_move_pct": 0.846,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 68.4,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of resistance (55,454).",
+        "PCR at 1.36 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "recommendation": "Buy Zone",
+      "score": 80,
+      "buy_zone": [
+        55610.29,
+        55631.47
+      ],
+      "sell_zone": [
+        55610.29,
+        56014.13
+      ],
+      "active_zone": [
+        55610.29,
+        55631.47
+      ],
+      "prev_close": 55681.46,
+      "actual_open": 55779.6,
+      "actual_close": 56081.74,
+      "daily_move_pct": 0.719,
+      "directional_correct": true,
+      "zone_hit": false,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.1% of support (55,631).",
+        "PCR at 1.167 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "recommendation": "Neutral",
+      "score": 49,
+      "buy_zone": [
+        55784.15,
+        55964.35
+      ],
+      "sell_zone": [
+        55964.35,
+        56144.55
+      ],
+      "active_zone": [
+        55784.15,
+        56144.55
+      ],
+      "prev_close": 56081.74,
+      "actual_open": 56357.35,
+      "actual_close": 54766.14,
+      "daily_move_pct": -2.346,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.1% of resistance (56,145).",
+        "PCR at 1.295 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "recommendation": "Buy Zone",
+      "score": 67,
+      "buy_zone": [
+        54180.46,
+        55316.22
+      ],
+      "sell_zone": [
+        55316.22,
+        55631.47
+      ],
+      "active_zone": [
+        54180.46,
+        55316.22
+      ],
+      "prev_close": 54766.14,
+      "actual_open": 54978.71,
+      "actual_close": 55171.93,
+      "daily_move_pct": 0.741,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 1.1% of support (54,180).",
+        "PCR at 1.416 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423.",
+        "VIX up 3.31% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "recommendation": "Neutral",
+      "score": 59,
+      "buy_zone": [
+        54750.13,
+        55120.21
+      ],
+      "sell_zone": [
+        55120.21,
+        55542.02
+      ],
+      "active_zone": [
+        54750.13,
+        55542.02
+      ],
+      "prev_close": 55171.93,
+      "actual_open": 55173.99,
+      "actual_close": 55495.16,
+      "daily_move_pct": 0.586,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.7% of resistance (55,542).",
+        "PCR at 0.933 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,766."
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "recommendation": "Neutral",
+      "score": 61,
+      "buy_zone": [
+        55167.56,
+        55390.86
+      ],
+      "sell_zone": [
+        55390.86,
+        55631.47
+      ],
+      "active_zone": [
+        55167.56,
+        55631.47
+      ],
+      "prev_close": 55495.16,
+      "actual_open": 55346.39,
+      "actual_close": 55206.63,
+      "daily_move_pct": -0.52,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of resistance (55,631).",
+        "PCR at 1.511 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,766."
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "recommendation": "Buy Zone",
+      "score": 72,
+      "buy_zone": [
+        55021.39,
+        55330.75
+      ],
+      "sell_zone": [
+        55330.75,
+        55515.98
+      ],
+      "active_zone": [
+        55021.39,
+        55330.75
+      ],
+      "prev_close": 55206.63,
+      "actual_open": 55299.91,
+      "actual_close": 54876.83,
+      "daily_move_pct": -0.597,
+      "directional_correct": false,
+      "zone_hit": true,
+      "zone_accuracy_pct": 53.3,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of support (55,021).",
+        "PCR at 1.176 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,766."
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "recommendation": "Buy Zone",
+      "score": 68,
+      "buy_zone": [
+        54700.92,
+        55045.07
+      ],
+      "sell_zone": [
+        55045.07,
+        55220.99
+      ],
+      "active_zone": [
+        54700.92,
+        55045.07
+      ],
+      "prev_close": 54876.83,
+      "actual_open": 54932.97,
+      "actual_close": 54892.03,
+      "daily_move_pct": 0.028,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of support (54,701).",
+        "PCR at 1.037 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,766.",
+        "VIX up 9.21% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "recommendation": "Neutral",
+      "score": 62,
+      "buy_zone": [
+        54695.03,
+        54871.38
+      ],
+      "sell_zone": [
+        54871.38,
+        55068.37
+      ],
+      "active_zone": [
+        54695.03,
+        55068.37
+      ],
+      "prev_close": 54892.03,
+      "actual_open": 54777.17,
+      "actual_close": 55855.31,
+      "daily_move_pct": 1.755,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of resistance (55,068).",
+        "PCR at 1.4 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423.",
+        "VIX up 15.74% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "recommendation": "Neutral",
+      "score": 60,
+      "buy_zone": [
+        55493.34,
+        55631.47
+      ],
+      "sell_zone": [
+        55493.34,
+        56017.83
+      ],
+      "active_zone": [
+        55493.34,
+        56017.83
+      ],
+      "prev_close": 55855.31,
+      "actual_open": 55976.31,
+      "actual_close": 55282.74,
+      "daily_move_pct": -1.025,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 59.8,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of resistance (56,018).",
+        "PCR at 1.24 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "recommendation": "Neutral",
+      "score": 62,
+      "buy_zone": [
+        54900.79,
+        55610.76
+      ],
+      "sell_zone": [
+        55610.76,
+        55631.47
+      ],
+      "active_zone": [
+        54900.79,
+        55631.47
+      ],
+      "prev_close": 55282.74,
+      "actual_open": 55211.31,
+      "actual_close": 55062.82,
+      "daily_move_pct": -0.398,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.6% of resistance (55,631).",
+        "PCR at 1.208 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "recommendation": "Buy Zone",
+      "score": 67,
+      "buy_zone": [
+        54852.66,
+        55132.27
+      ],
+      "sell_zone": [
+        55132.27,
+        55342.42
+      ],
+      "active_zone": [
+        54852.66,
+        55132.27
+      ],
+      "prev_close": 55062.82,
+      "actual_open": 54937.63,
+      "actual_close": 55829.18,
+      "daily_move_pct": 1.392,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of support (54,853).",
+        "PCR at 1.234 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "recommendation": "Buy Zone",
+      "score": 67,
+      "buy_zone": [
+        55546.76,
+        55631.47
+      ],
+      "sell_zone": [
+        55546.76,
+        56231.27
+      ],
+      "active_zone": [
+        55546.76,
+        55631.47
+      ],
+      "prev_close": 55829.18,
+      "actual_open": 55854.46,
+      "actual_close": 55596.84,
+      "daily_move_pct": -0.416,
+      "directional_correct": false,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of support (55,631).",
+        "PCR at 1.147 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,423.",
+        "VIX up 4.54% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "recommendation": "Neutral",
+      "score": 40,
+      "buy_zone": [
+        55140.71,
+        55514.67
+      ],
+      "sell_zone": [
+        55514.67,
+        55631.47
+      ],
+      "active_zone": [
+        55140.71,
+        55631.47
+      ],
+      "prev_close": 55596.84,
+      "actual_open": 55682.31,
+      "actual_close": 55411.01,
+      "daily_move_pct": -0.334,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.1% of resistance (55,631).",
+        "PCR at 1.052 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "recommendation": "Neutral",
+      "score": 62,
+      "buy_zone": [
+        55092.49,
+        55530.37
+      ],
+      "sell_zone": [
+        55530.37,
+        55631.47
+      ],
+      "active_zone": [
+        55092.49,
+        55631.47
+      ],
+      "prev_close": 55411.01,
+      "actual_open": 55329.37,
+      "actual_close": 55481.81,
+      "daily_move_pct": 0.128,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of resistance (55,631).",
+        "PCR at 1.448 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "recommendation": "Neutral",
+      "score": 53,
+      "buy_zone": [
+        55183.46,
+        55384.25
+      ],
+      "sell_zone": [
+        55384.25,
+        55631.47
+      ],
+      "active_zone": [
+        55183.46,
+        55631.47
+      ],
+      "prev_close": 55481.81,
+      "actual_open": 55428.23,
+      "actual_close": 54809.77,
+      "daily_move_pct": -1.211,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 16.6,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of resistance (55,631).",
+        "PCR at 1.107 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,423.",
+        "VIX up 18.64% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "recommendation": "Buy Zone",
+      "score": 74,
+      "buy_zone": [
+        54678.02,
+        55051.75
+      ],
+      "sell_zone": [
+        55051.75,
+        55425.47
+      ],
+      "active_zone": [
+        54678.02,
+        55051.75
+      ],
+      "prev_close": 54809.77,
+      "actual_open": 54929.99,
+      "actual_close": 54946.76,
+      "daily_move_pct": 0.25,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of support (54,678).",
+        "PCR at 1.216 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 54,423.",
+        "VIX up 11.61% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "recommendation": "Neutral",
+      "score": 61,
+      "buy_zone": [
+        54806.47,
+        54955.89
+      ],
+      "sell_zone": [
+        54955.89,
+        55096.18
+      ],
+      "active_zone": [
+        54806.47,
+        55096.18
+      ],
+      "prev_close": 54946.76,
+      "actual_open": 54815.32,
+      "actual_close": 54298.6,
+      "daily_move_pct": -1.18,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of support (54,806).",
+        "PCR at 1.075 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 54,423."
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "recommendation": "Buy Zone",
+      "score": 78,
+      "buy_zone": [
+        54286.0,
+        54480.13
+      ],
+      "sell_zone": [
+        54480.13,
+        54606.89
+      ],
+      "active_zone": [
+        54286.0,
+        54480.13
+      ],
+      "prev_close": 54298.6,
+      "actual_open": 54322.65,
+      "actual_close": 54795.54,
+      "daily_move_pct": 0.915,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.0% of support (54,286).",
+        "PCR at 1.077 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "recommendation": "Neutral",
+      "score": 64,
+      "buy_zone": [
+        54606.89,
+        54691.6
+      ],
+      "sell_zone": [
+        54691.6,
+        55074.03
+      ],
+      "active_zone": [
+        54606.89,
+        55074.03
+      ],
+      "prev_close": 54795.54,
+      "actual_open": 54899.17,
+      "actual_close": 54813.72,
+      "daily_move_pct": 0.033,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of support (54,607).",
+        "PCR at 1.383 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638.",
+        "VIX up 4.02% while Bank Nifty fell \u2014 conviction reduced."
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "recommendation": "Buy Zone",
+      "score": 66,
+      "buy_zone": [
+        54606.89,
+        54834.29
+      ],
+      "sell_zone": [
+        54834.29,
+        55117.07
+      ],
+      "active_zone": [
+        54606.89,
+        54834.29
+      ],
+      "prev_close": 54813.72,
+      "actual_open": 54744.02,
+      "actual_close": 56081.8,
+      "daily_move_pct": 2.313,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.4% of support (54,607).",
+        "PCR at 1.346 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "recommendation": "Neutral",
+      "score": 61,
+      "buy_zone": [
+        55669.4,
+        55968.25
+      ],
+      "sell_zone": [
+        55669.4,
+        56213.33
+      ],
+      "active_zone": [
+        55669.4,
+        56213.33
+      ],
+      "prev_close": 56081.8,
+      "actual_open": 56135.01,
+      "actual_close": 56256.12,
+      "daily_move_pct": 0.311,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 92.1,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of support (55,968).",
+        "PCR at 1.184 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "recommendation": "Neutral",
+      "score": 47,
+      "buy_zone": [
+        56120.31,
+        56204.85
+      ],
+      "sell_zone": [
+        56204.85,
+        56289.39
+      ],
+      "active_zone": [
+        56120.31,
+        56289.39
+      ],
+      "prev_close": 56256.12,
+      "actual_open": 56160.67,
+      "actual_close": 57041.29,
+      "daily_move_pct": 1.396,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.1% of resistance (56,289).",
+        "PCR at 1.366 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "recommendation": "Neutral",
+      "score": 47,
+      "buy_zone": [
+        56509.32,
+        56709.69
+      ],
+      "sell_zone": [
+        56709.69,
+        57220.65
+      ],
+      "active_zone": [
+        56509.32,
+        57220.65
+      ],
+      "prev_close": 57041.29,
+      "actual_open": 57068.12,
+      "actual_close": 56315.0,
+      "daily_move_pct": -1.273,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 72.7,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of resistance (57,221).",
+        "PCR at 1.147 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "recommendation": "Neutral",
+      "score": 37,
+      "buy_zone": [
+        55968.25,
+        56659.2
+      ],
+      "sell_zone": [
+        56320.73,
+        56659.2
+      ],
+      "active_zone": [
+        55968.25,
+        56659.2
+      ],
+      "prev_close": 56315.0,
+      "actual_open": 56489.18,
+      "actual_close": 56263.11,
+      "daily_move_pct": -0.092,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.0% of resistance (56,321).",
+        "PCR at 1.236 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "recommendation": "Neutral",
+      "score": 50,
+      "buy_zone": [
+        56126.7,
+        56368.21
+      ],
+      "sell_zone": [
+        56320.73,
+        56368.21
+      ],
+      "active_zone": [
+        56126.7,
+        56368.21
+      ],
+      "prev_close": 56263.11,
+      "actual_open": 56338.78,
+      "actual_close": 56461.8,
+      "daily_move_pct": 0.353,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 61.2,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.1% of resistance (56,321).",
+        "PCR at 1.203 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "recommendation": "Neutral",
+      "score": 49,
+      "buy_zone": [
+        56320.73,
+        56334.52
+      ],
+      "sell_zone": [
+        56334.52,
+        56509.32
+      ],
+      "active_zone": [
+        56320.73,
+        56509.32
+      ],
+      "prev_close": 56461.8,
+      "actual_open": 56468.7,
+      "actual_close": 57464.41,
+      "daily_move_pct": 1.776,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.1% of resistance (56,509).",
+        "PCR at 1.287 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "recommendation": "Neutral",
+      "score": 36,
+      "buy_zone": [
+        56758.32,
+        57115.16
+      ],
+      "sell_zone": [
+        57115.16,
+        57472.01
+      ],
+      "active_zone": [
+        56758.32,
+        57472.01
+      ],
+      "prev_close": 57464.41,
+      "actual_open": 57414.49,
+      "actual_close": 56515.72,
+      "daily_move_pct": -1.651,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 66.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.0% of resistance (57,472).",
+        "PCR at 1.161 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "recommendation": "Buy Zone",
+      "score": 82,
+      "buy_zone": [
+        56509.32,
+        56889.52
+      ],
+      "sell_zone": [
+        56889.52,
+        57339.21
+      ],
+      "active_zone": [
+        56509.32,
+        56889.52
+      ],
+      "prev_close": 56515.72,
+      "actual_open": 56502.02,
+      "actual_close": 57092.53,
+      "daily_move_pct": 1.021,
+      "directional_correct": true,
+      "zone_hit": true,
+      "zone_accuracy_pct": 46.6,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.0% of support (56,509).",
+        "PCR at 1.167 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "recommendation": "Neutral",
+      "score": 52,
+      "buy_zone": [
+        56509.32,
+        56807.37
+      ],
+      "sell_zone": [
+        56807.37,
+        57410.88
+      ],
+      "active_zone": [
+        56509.32,
+        57410.88
+      ],
+      "prev_close": 57092.53,
+      "actual_open": 57111.34,
+      "actual_close": 57447.27,
+      "daily_move_pct": 0.621,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 96.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.6% of resistance (57,411).",
+        "PCR at 1.167 \u2014 balanced option positioning.",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "recommendation": "Neutral",
+      "score": 54,
+      "buy_zone": [
+        57203.83,
+        57338.59
+      ],
+      "sell_zone": [
+        57338.59,
+        57582.03
+      ],
+      "active_zone": [
+        57203.83,
+        57582.03
+      ],
+      "prev_close": 57447.27,
+      "actual_open": 57626.17,
+      "actual_close": 58345.49,
+      "daily_move_pct": 1.564,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of resistance (57,582).",
+        "PCR at 1.273 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 52,638."
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "recommendation": "Neutral",
+      "score": 46,
+      "buy_zone": [
+        57646.74,
+        58042.68
+      ],
+      "sell_zone": [
+        58042.68,
+        58438.61
+      ],
+      "active_zone": [
+        57646.74,
+        58438.61
+      ],
+      "prev_close": 58345.49,
+      "actual_open": 58313.98,
+      "actual_close": 58778.64,
+      "daily_move_pct": 0.742,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 57.1,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of resistance (58,439).",
+        "PCR at 1.238 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 57,447."
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "recommendation": "Neutral",
+      "score": 54,
+      "buy_zone": [
+        58380.75,
+        58658.91
+      ],
+      "sell_zone": [
+        58658.91,
+        58937.08
+      ],
+      "active_zone": [
+        58380.75,
+        58937.08
+      ],
+      "prev_close": 58778.64,
+      "actual_open": 58886.4,
+      "actual_close": 58826.88,
+      "daily_move_pct": 0.082,
+      "directional_correct": null,
+      "zone_hit": true,
+      "zone_accuracy_pct": 100.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.3% of resistance (58,937).",
+        "PCR at 1.306 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 57,447."
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "recommendation": "Buy Zone",
+      "score": 71,
+      "buy_zone": [
+        58729.93,
+        58874.34
+      ],
+      "sell_zone": [
+        58874.34,
+        58971.3
+      ],
+      "active_zone": [
+        58729.93,
+        58874.34
+      ],
+      "prev_close": 58826.88,
+      "actual_open": 58815.1,
+      "actual_close": 58537.66,
+      "daily_move_pct": -0.492,
+      "directional_correct": false,
+      "zone_hit": true,
+      "zone_accuracy_pct": 0.0,
+      "outlier_flag": false,
+      "outlier_reason": "",
+      "reasons": [
+        "Price is within 0.2% of support (58,730).",
+        "PCR at 1.474 \u2014 put-heavy positioning (bullish tilt).",
+        "Unfilled gap-up support near 57,447."
+      ]
+    }
+  ]
+}

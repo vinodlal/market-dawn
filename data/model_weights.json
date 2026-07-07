@@ -1,0 +1,11 @@
+{
+  "weights": {
+    "sr": 40,
+    "gap": 25,
+    "pcr": 20,
+    "vix": 15
+  },
+  "updated": "2026-07-07",
+  "version": 1,
+  "note": "Composite score weights (percent). Seeded with spec defaults. optimize_weights.py rewrites this file; analysis_engine.py reads it instead of hardcoding."
+}

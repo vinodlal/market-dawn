@@ -1,0 +1,25 @@
+{
+  "name": "Bank Nifty Predictor",
+  "short_name": "BN Predictor",
+  "description": "Daily rule-based Buy/Sell/Neutral zone read for Bank Nifty.",
+  "display": "standalone",
+  "start_url": ".",
+  "scope": ".",
+  "theme_color": "#0b1220",
+  "background_color": "#0b1220",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
