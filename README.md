@@ -115,6 +115,8 @@ data/                latest.json, backtest_log.json, model_weights.json,
 docs/                index.html, app.js, manifest.json, service-worker.js, icons/
 ```
 
-> `data/latest.json` and `data/backtest_log.json` currently hold **sample**
-> output from synthetic data so the PWA renders before the first real run. The
-> first live pipeline run overwrites them with real numbers.
+> `data/` holds **real** Bank Nifty data bootstrapped via the Kite MCP
+> (history 2026-03-27 → 2026-07-07). Refresh it going forward with the manual
+> Kite-MCP flow (log in, pull the day's data, regenerate `latest.json` +
+> `backtest_log.json`, commit) or wire up the unattended `generate_token.py`
+> token flow for the daily GitHub Action.

@@ -1,44 +1,44 @@
 {
   "date": "2026-07-07",
-  "banknifty_close": 58537.66,
+  "banknifty_close": 58134.5,
   "recommendation": "Buy Zone",
   "score": 65,
   "buy_zone": [
-    58279.56,
-    58656.04
+    58021.25,
+    58275.23
   ],
   "sell_zone": [
-    58656.04,
-    58914.13
+    58275.23,
+    58440.37
   ],
   "reasons": [
-    "Price is within 0.4% of support (58,280).",
-    "PCR at 1.083 \u2014 balanced option positioning.",
-    "Unfilled gap-up support near 57,447."
+    "Price is within 0.2% of support (58,021).",
+    "PCR at 0.821 \u2014 balanced option positioning.",
+    "Unfilled gap-up support near 56,815."
   ],
   "correlations": {
-    "vix_20d": 0.016,
-    "vix_90d": 0.169,
-    "crude_20d": 0.2,
-    "crude_90d": 0.052,
-    "usdinr_20d": 0.398,
-    "usdinr_90d": 0.279
+    "vix_20d": -0.688,
+    "vix_90d": -0.744,
+    "crude_20d": -0.484,
+    "crude_90d": -0.607,
+    "usdinr_20d": -0.383,
+    "usdinr_90d": -0.249
   },
-  "pcr": 1.083,
+  "pcr": 0.821,
   "levels": {
-    "pivot": 58656.04,
-    "nearest_support": 58279.56,
-    "nearest_resistance": 58914.13,
-    "r1": 58914.13,
-    "r2": 59290.61,
-    "s1": 58279.56,
-    "s2": 58021.47,
-    "atm_strike": 58500
+    "pivot": 58275.23,
+    "nearest_support": 58021.25,
+    "nearest_resistance": 58440.37,
+    "r1": 58440.37,
+    "r2": 58746.23,
+    "s1": 57969.37,
+    "s2": 57804.23,
+    "atm_strike": 58100
   },
   "components": {
-    "sr": 59.3,
+    "sr": 73.0,
     "gap": 75.0,
-    "pcr": 63.3,
+    "pcr": 37.1,
     "vix_caution": false
   },
   "weights": {
