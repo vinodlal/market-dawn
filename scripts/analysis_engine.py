@@ -327,6 +327,37 @@ def analyze(day_payload, weights, macro_flags=None):
     else:
         score_label = "Bearish (Sell trigger)"
 
+    # --- day-over-day directional read of each driver vs Bank Nifty
+    def _relationship(name, candles, corr):
+        if len(candles) < 2 or not candles[-2]["close"]:
+            return None
+        prev, latest = candles[-2], candles[-1]
+        chg = (latest["close"] - prev["close"]) / prev["close"] * 100
+        if corr is None:
+            rel, implication = "unclear", "neutral"
+        elif abs(corr) < 0.3 or abs(chg) < 0.05:
+            rel = "inverse" if corr < 0 else "direct"
+            implication = "neutral"  # weak correlation or negligible move
+        else:
+            rel = "inverse" if corr < 0 else "direct"
+            direction = (1 if chg > 0 else -1) * (1 if corr > 0 else -1)
+            implication = "bullish" if direction > 0 else "bearish"
+        return {
+            "name": name,
+            "prev_date": prev["date"], "prev": round(prev["close"], 2),
+            "date": latest["date"], "value": round(latest["close"], 2),
+            "change_pct": round(chg, 2),
+            "corr_20d": corr,
+            "relationship": rel,
+            "implication": implication,
+        }
+
+    relationships = [r for r in (
+        _relationship("VIX", vix, correlations["vix_20d"]),
+        _relationship("Crude", crude, correlations["crude_20d"]),
+        _relationship("USDINR", usdinr, correlations["usdinr_20d"]),
+    ) if r]
+
     # --- projected next-day levels: pivots from TODAY's OHLC apply to next session
     projection = {
         "next_day_pivot": round(piv["pivot"], 2),
@@ -355,6 +386,7 @@ def analyze(day_payload, weights, macro_flags=None):
         "projection": projection,
         "reasons": reasons,
         "correlations": correlations,
+        "relationships": relationships,
         "pcr": pcr,
         "levels": {
             "pivot": round(pivot, 2),

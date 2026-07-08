@@ -70,21 +70,38 @@ async function refreshData() {
   }
 }
 
-function corrBar(name, r20, r90) {
-  if (r20 === null || r20 === undefined) {
-    return `<div class="corr-row"><div class="corr-name">${name}</div>
-      <div class="corr-track"><div class="corr-zero"></div></div><div class="corr-val">—</div></div>`;
+function shortDate(iso) {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-");
+  const mon = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m - 1] || m;
+  return `${d} ${mon}`;
+}
+
+// A single driver's day-over-day move and what it implies for Bank Nifty.
+function relRow(r) {
+  const up = r.change_pct > 0, down = r.change_pct < 0;
+  const arrow = up ? "▲" : (down ? "▼" : "▬");
+  const chip = r.implication === "bullish" ? "buy" : (r.implication === "bearish" ? "sell" : "neutral");
+  const chipTxt = r.implication === "bullish" ? "Supports Bank Nifty"
+               : (r.implication === "bearish" ? "Pressures Bank Nifty" : "Neutral");
+  const moved = up ? "rose" : (down ? "fell" : "flat");
+  const note = r.implication === "neutral"
+    ? `${r.name} ${moved} — weak/unclear link right now`
+    : `${r.name} ${moved} — ${r.implication === "bullish" ? "supportive for" : "pressure on"} Bank Nifty`;
+  const c = r.corr_20d;
+  let bar = `<div class="corr-track slim"><div class="corr-zero"></div></div>`;
+  if (c !== null && c !== undefined) {
+    const mag = Math.min(Math.abs(c), 1) * 50, neg = c < 0;
+    const style = neg ? `left:${(50 - mag).toFixed(1)}%;width:${mag.toFixed(1)}%` : `left:50%;width:${mag.toFixed(1)}%`;
+    bar = `<div class="corr-track slim"><div class="corr-zero"></div><div class="corr-bar ${neg ? "neg" : "pos"}" style="${style}"></div></div>`;
   }
-  const mag = Math.min(Math.abs(r20), 1) * 50;
-  const neg = r20 < 0;
-  const style = neg ? `left:${(50 - mag).toFixed(1)}%;width:${mag.toFixed(1)}%`
-                    : `left:50%;width:${mag.toFixed(1)}%`;
-  const r90txt = (r90 === null || r90 === undefined) ? "" : `<small>90d ${r90.toFixed(2)}</small>`;
-  return `<div class="corr-row">
-    <div class="corr-name">${name}</div>
-    <div class="corr-track"><div class="corr-zero"></div>
-      <div class="corr-bar ${neg ? "neg" : "pos"}" style="${style}"></div></div>
-    <div class="corr-val">${r20.toFixed(2)}${r90txt}</div>
+  return `<div class="rel">
+    <div class="rel-top">
+      <span class="rel-name">${r.name}</span>
+      <span class="rel-vals">${fmt2(r.prev)} <small>${shortDate(r.prev_date)}</small> → ${fmt2(r.value)} <small>${shortDate(r.date)}</small> <b>${arrow}${Math.abs(r.change_pct)}%</b></span>
+    </div>
+    <div class="rel-mid">${bar}<span class="badge-sm ${chip}">${chipTxt}</span></div>
+    <div class="rel-note">${note} · ${r.relationship === "inverse" ? "moves opposite" : "moves with"} BN (${c ?? "—"})</div>
   </div>`;
 }
 
@@ -139,12 +156,9 @@ function renderToday(d) {
       <ul class="reasons">${(d.reasons || []).map(r => `<li>${r}</li>`).join("")}</ul>
     </div>
     <div class="card">
-      <h3>How Bank Nifty moves with other markets (20-day)</h3>
-      <div class="corr-axis"><span>−1 opposite</span><span>0</span><span>same +1</span></div>
-      ${corrBar("VIX", corr.vix_20d, corr.vix_90d)}
-      ${corrBar("Crude", corr.crude_20d, corr.crude_90d)}
-      ${corrBar("USDINR", corr.usdinr_20d, corr.usdinr_90d)}
-      <div class="caption">Blue = moves opposite Bank Nifty; amber = moves with it. E.g. VIX at ${corr.vix_20d ?? "—"} means when volatility rises, Bank Nifty tends to fall.</div>
+      <h3>Bank Nifty vs its drivers — yesterday → today</h3>
+      ${(d.relationships || []).map(relRow).join("") || '<div class="caption">Not enough data yet.</div>'}
+      <div class="caption">Direction is inferred from each driver's 20-day correlation with Bank Nifty (blue bar = moves opposite, amber = moves with). E.g. VIX moves opposite, so VIX <b>falling</b> is supportive. Educational only — a tendency, not a guarantee.</div>
     </div>`;
   const c = document.getElementById("today-content");
   c.innerHTML = html;

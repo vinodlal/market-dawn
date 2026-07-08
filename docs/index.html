@@ -105,6 +105,24 @@
     .corr-val { width: 44px; text-align: right; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
     .corr-val small { display: block; font-size: 9px; color: var(--muted); font-weight: 400; }
     .corr-axis { display: flex; justify-content: space-between; font-size: 9px; color: var(--muted); padding: 0 46px 0 66px; }
+    .corr-track.slim { height: 8px; }
+    .corr-track.slim .corr-bar { top: 2px; height: 4px; }
+
+    /* day-over-day relationship rows */
+    .rel { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .rel:last-of-type { border-bottom: none; }
+    .rel-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .rel-name { font-size: 14px; font-weight: 700; }
+    .rel-vals { font-size: 13px; color: var(--text); font-variant-numeric: tabular-nums; }
+    .rel-vals small { color: var(--muted); font-size: 10px; }
+    .rel-vals b { margin-left: 4px; }
+    .rel-mid { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+    .rel-mid .corr-track { flex: 1; }
+    .badge-sm { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+    .badge-sm.buy { background: var(--buy-dim); color: var(--buy); border: 1px solid var(--buy); }
+    .badge-sm.sell { background: var(--sell-dim); color: var(--sell); border: 1px solid var(--sell); }
+    .badge-sm.neutral { background: var(--neutral-dim); color: var(--neutral); border: 1px solid var(--neutral); }
+    .rel-note { font-size: 11px; color: var(--muted); margin-top: 5px; }
 
     /* Calendar */
     .cal-summary { display: flex; gap: 8px; margin-bottom: 12px; }

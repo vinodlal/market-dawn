@@ -45,6 +45,41 @@
     "usdinr_20d": -0.397,
     "usdinr_90d": -0.25
   },
+  "relationships": [
+    {
+      "name": "VIX",
+      "prev_date": "2026-07-06",
+      "prev": 11.82,
+      "date": "2026-07-07",
+      "value": 11.65,
+      "change_pct": -1.44,
+      "corr_20d": -0.683,
+      "relationship": "inverse",
+      "implication": "bullish"
+    },
+    {
+      "name": "Crude",
+      "prev_date": "2026-07-06",
+      "prev": 6551,
+      "date": "2026-07-07",
+      "value": 6705,
+      "change_pct": 2.35,
+      "corr_20d": -0.478,
+      "relationship": "inverse",
+      "implication": "bearish"
+    },
+    {
+      "name": "USDINR",
+      "prev_date": "2026-07-06",
+      "prev": 95.56,
+      "date": "2026-07-07",
+      "value": 95.07,
+      "change_pct": -0.51,
+      "corr_20d": -0.397,
+      "relationship": "inverse",
+      "implication": "bullish"
+    }
+  ],
   "pcr": 0.821,
   "levels": {
     "pivot": 58297.3,

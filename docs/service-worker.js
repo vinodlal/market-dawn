@@ -2,7 +2,7 @@
  * cache-first for static assets; network-first for the JSON data feeds so the
  * app always tries fresh numbers, falling back to cache when offline.
  */
-const CACHE = "bn-predictor-v1";
+const CACHE = "bn-predictor-v2";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
@@ -12,8 +12,13 @@ const STATIC_ASSETS = [
   "./icons/icon-512.png",
 ];
 
-// Always try the network first for these (fall back to cache offline).
-const NETWORK_FIRST = ["/data/latest.json", "/data/backtest_log.json"];
+// Network-first (fall back to cache offline) for the data feeds AND the app
+// code/markup, so UI updates and fresh data land immediately when online.
+// Only the rarely-changing icons/manifest stay cache-first.
+const NETWORK_FIRST = [
+  "/data/latest.json", "/data/backtest_log.json",
+  "/index.html", "/app.js", "/docs/", "/docs/index.html", "/docs/app.js",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
