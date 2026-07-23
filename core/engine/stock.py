@@ -44,13 +44,15 @@ def btst_verdict(df: pd.DataFrame, bias: str, event_soon: bool = False) -> dict:
 
 def analyze_stock(symbol: str, df: pd.DataFrame, *,
                    vix_df: pd.DataFrame | None = None,
+                   drivers: dict[str, pd.DataFrame] | None = None,
                    has_futures: bool = False,
                    future_quote: dict | None = None,
                    is_holding: bool = False,
                    event_soon: bool = False,
                    weights: dict | None = None,
                    capital: float = 100_000, risk_pct: float = 1.0) -> dict:
-    sig = signal_mod.analyze(symbol, kind="equity", df=df, vix_df=vix_df, weights=weights)
+    sig = signal_mod.analyze(symbol, kind="equity", df=df, vix_df=vix_df, drivers=drivers,
+                              weights=weights)
 
     atr_series = momentum_mod.atr(df)
     atr_val = float(atr_series.iloc[-1]) if pd.notna(atr_series.iloc[-1]) else sig["price"] * 0.01
