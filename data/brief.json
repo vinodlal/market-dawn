@@ -1,0 +1,376 @@
+{
+  "generated_at": "2026-07-23T22:58:51.314851+05:30",
+  "snapshot": {
+    "NIFTY": {
+      "last_price": 23869.6,
+      "prev_close": 23996.25,
+      "change_pct": -0.53,
+      "source": "kite"
+    },
+    "BANKNIFTY": {
+      "last_price": 56592,
+      "prev_close": 57126.8,
+      "change_pct": -0.94,
+      "source": "kite"
+    },
+    "INDIAVIX": {
+      "last_price": 13.48,
+      "prev_close": 13.29,
+      "change_pct": 1.43,
+      "source": "kite"
+    },
+    "BRENT": {
+      "last_price": 101.0,
+      "prev_close": 96.29000091552734,
+      "change_pct": 4.89,
+      "source": "public"
+    },
+    "USDINR": {
+      "last_price": 96.56300354003906,
+      "prev_close": 96.55500030517578,
+      "change_pct": 0.01,
+      "source": "public"
+    },
+    "GIFTNIFTY": {
+      "last_price": null,
+      "prev_close": null,
+      "change_pct": null,
+      "source": null
+    }
+  },
+  "pcr": 0.966,
+  "status": "GIFT Nifty data unavailable \u2014 no clean free feed yet. Brent crude up 4.9% overnight. Bank Nifty PCR at 0.966 \u2014 balanced option positioning.",
+  "news": {
+    "india": [
+      {
+        "title": "Tesla falls 15%, Alphabet drops 8% as AI spending concerns mount",
+        "link": "https://www.livemint.com/market/stock-market-news/tesla-falls-15-alphabet-drops-8-as-ai-spending-concerns-mount-11784819582476.html",
+        "source": "Livemint Markets",
+        "published": "2026-07-23T21:50:44+05:30",
+        "sentiment": "bearish"
+      },
+      {
+        "title": "Suryoday SFB Q1 profit more than doubles on strong loan growth",
+        "link": "https://economictimes.indiatimes.com/markets/stocks/earnings/suryoday-sfb-q1-profit-more-than-doubles-on-strong-loan-growth/articleshow/132586902.cms",
+        "source": "ET Markets",
+        "published": "2026-07-23T21:42:44+05:30",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Dow forecasts quarterly core profit slightly above estimates, warns of Middle East uncertainty",
+        "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/dow-forecasts-quarterly-core-profit-slightly-above-estimates-warns-of-middle-east-uncertainty/articleshow/132586824.cms",
+        "source": "ET Markets",
+        "published": "2026-07-23T21:38:50+05:30",
+        "sentiment": "bearish"
+      },
+      {
+        "title": "Ahead of Market: 10 things that will decide stock market action on Friday",
+        "link": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-friday/articleshow/132586769.cms",
+        "source": "ET Markets",
+        "published": "2026-07-23T21:35:22+05:30",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Nasdaq tops profit estimates on high-profile listings, robust data revenue",
+        "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-tops-profit-estimates-on-high-profile-listings-robust-data-revenue/articleshow/132585994.cms",
+        "source": "ET Markets",
+        "published": "2026-07-23T20:49:37+05:30",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Tesla shares crash 14%, Alphabet falls 6% as AI spending worries hit Wall Street",
+        "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/tesla-shares-crash-14-alphabet-falls-6-as-ai-spending-worries-hit-wall-street/articleshow/132585791.cms",
+        "source": "ET Markets",
+        "published": "2026-07-23T20:45:07+05:30",
+        "sentiment": "bearish"
+      },
+      {
+        "title": "Indo-MIM IPO: Issue receives solid response on Day 1, subscribed 1.4 times; NII portion booked 3 times",
+        "link": "https://www.livemint.com/market/stock-market-news/indomim-ipo-issue-receives-solid-response-on-day-1-subscribed-1-4-times-nii-portion-booked-3-times-11784817692816.html",
+        "source": "Livemint Markets",
+        "published": "2026-07-23T20:37:17+05:30",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "US stocks tumble on renewed concerns over massive AI spending, rising crude prices",
+        "link": "https://www.livemint.com/market/stock-market-news/us-stocks-tumble-on-renewed-concerns-over-massive-ai-spending-rising-crude-prices-11784814492137.html",
+        "source": "Livemint Markets",
+        "published": "2026-07-23T19:33:10+05:30",
+        "sentiment": "bearish"
+      }
+    ],
+    "global": [
+      {
+        "title": "Naked Wines plc reports FY results",
+        "link": "https://seekingalpha.com/news/4617584-naked-wines-plc-reports-fy-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:23:34-04:00",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Arista Networks sees largely bullish views at BofA ahead of Q2 results",
+        "link": "https://seekingalpha.com/news/4617565-arista-networks-sees-largely-bullish-views-at-bofa-ahead-of-q2-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:23:26-04:00",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Zurn Elkay Water Solutions declares $0.11 dividend",
+        "link": "https://seekingalpha.com/news/4617585-zurn-elkay-water-solutions-declares-0_11-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:23:26-04:00",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Suburban Propane Partners declares $0.325 dividend",
+        "link": "https://seekingalpha.com/news/4617583-suburban-propane-partners-declares-0_325-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:21:14-04:00",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Cass Information Systems declares $0.32 dividend",
+        "link": "https://seekingalpha.com/news/4617581-cass-information-systems-declares-0_32-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:18:46-04:00",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Airtel Africa Plc GAAP EPS of $0.04, revenue of $1.85B beats by $130M",
+        "link": "https://seekingalpha.com/news/4617580-airtel-africa-plc-gaap-eps-of-0_04-revenue-of-1_85b-beats-by-130m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:17:20-04:00",
+        "sentiment": "bullish"
+      },
+      {
+        "title": "History says sell: Rare stock-oil divergence flashes red for bulls",
+        "link": "https://seekingalpha.com/news/4617572-history-says-sell-rare-stock-oil-divergence-flashes-red-for-bulls?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "published": "2026-07-23T13:16:27-04:00",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "Odds of Federal Reserve rate hike surge as oil prices rip higher",
+        "link": "https://www.cnbc.com/2026/07/23/fed-interest-rate-odds-oil-jobless-claims.html",
+        "source": "CNBC World",
+        "published": "2026-07-23T17:15:03+00:00",
+        "sentiment": "bullish"
+      }
+    ]
+  },
+  "top_signals": [
+    {
+      "symbol": "BANKNIFTY",
+      "kind": "future",
+      "horizon": "swing",
+      "date": "2026-07-23 00:00:00+05:30",
+      "price": 56563.35,
+      "score": 52,
+      "bias": "Neutral",
+      "confidence": "low",
+      "component_scores": {
+        "sr": 68.9,
+        "gap": 25.0,
+        "momentum": 56.0,
+        "ma": 50.0,
+        "structure": 50.0,
+        "drivers": 50.0,
+        "oi": 50.0
+      },
+      "reasons": [
+        "Futures OI: neutral (neutral), basis premium (+0.14%)",
+        "Regime: range (ADX 14) \u2014 RSI read as mean-reversion",
+        "VIX rising (+3.8%) while price falls \u2014 conviction reduced",
+        "Unfilled gap positioning: bearish (25/100)",
+        "Price near support/resistance: bullish (69/100)",
+        "RSI momentum: bullish (56/100)"
+      ],
+      "levels": {
+        "pivot": 56622.75,
+        "support": 56549.4,
+        "resistance": 56594.25,
+        "r1": 56870.75,
+        "s1": 56315.35,
+        "atm_strike": null
+      },
+      "pcr": null,
+      "ma": {
+        "price": 56563.35,
+        "values": {
+          "20": 57745.47,
+          "50": 56227.71,
+          "100": 55894.72,
+          "200": 57402.89
+        },
+        "above": [
+          50,
+          100
+        ],
+        "below": [
+          20,
+          200
+        ],
+        "trend": "Downtrend bias \u2014 price below the 200-DMA"
+      },
+      "structure": "range/unclear structure",
+      "regime": "range",
+      "adx": 13.7,
+      "relationships": [
+        {
+          "name": "BRENT",
+          "prev_date": "2026-07-21 09:30:00+05:30",
+          "prev": 91.01,
+          "date": "2026-07-22 09:30:00+05:30",
+          "value": 94.07,
+          "change_pct": 3.36,
+          "corr_20d": -0.281,
+          "relationship": "inverse",
+          "implication": "neutral"
+        },
+        {
+          "name": "USDINR",
+          "prev_date": "2026-07-21 04:30:00+05:30",
+          "prev": 96.49,
+          "date": "2026-07-22 04:30:00+05:30",
+          "value": 96.34,
+          "change_pct": -0.15,
+          "corr_20d": -0.023,
+          "relationship": "inverse",
+          "implication": "neutral"
+        }
+      ],
+      "weights": {
+        "sr": 18,
+        "gap": 8,
+        "pcr": 14,
+        "momentum": 8,
+        "ma": 8,
+        "structure": 8,
+        "oi": 14,
+        "drivers": 14,
+        "vix": 8
+      },
+      "disclaimer": "Educational/informational only. Not SEBI-registered investment advice.",
+      "oi": {
+        "buildup": "neutral",
+        "implication": "neutral",
+        "oi": 1990950,
+        "oi_chg_pct": 0.0
+      },
+      "basis": {
+        "pct": 0.145,
+        "reading": "premium",
+        "future_price": 56673.8,
+        "spot_price": 56592
+      },
+      "trade_plan": null
+    },
+    {
+      "symbol": "NIFTY",
+      "kind": "future",
+      "horizon": "swing",
+      "date": "2026-07-23 00:00:00+05:30",
+      "price": 23871.7,
+      "score": 52,
+      "bias": "Neutral",
+      "confidence": "low",
+      "component_scores": {
+        "sr": 91.4,
+        "gap": 0.0,
+        "momentum": 54.6,
+        "ma": 25.0,
+        "structure": 50.0,
+        "drivers": 50.0,
+        "oi": 50.0
+      },
+      "reasons": [
+        "Futures OI: neutral (neutral), basis premium (+0.07%)",
+        "Regime: range (ADX 10) \u2014 RSI read as mean-reversion",
+        "VIX rising (+3.8%) while price falls \u2014 conviction reduced",
+        "Unfilled gap positioning: bearish (0/100)",
+        "Price near support/resistance: bullish (91/100)",
+        "Price vs. moving-average stack: bearish (25/100)"
+      ],
+      "levels": {
+        "pivot": 23889.88,
+        "support": 23862.25,
+        "resistance": 23972.57,
+        "r1": 23972.57,
+        "s1": 23789.02,
+        "atm_strike": null
+      },
+      "pcr": null,
+      "ma": {
+        "price": 23871.7,
+        "values": {
+          "20": 24112.2,
+          "50": 23843.38,
+          "100": 23877.95,
+          "200": 24802.74
+        },
+        "above": [
+          50
+        ],
+        "below": [
+          20,
+          100,
+          200
+        ],
+        "trend": "Downtrend bias \u2014 price below the 200-DMA"
+      },
+      "structure": "range/unclear structure",
+      "regime": "range",
+      "adx": 10.1,
+      "relationships": [
+        {
+          "name": "BRENT",
+          "prev_date": "2026-07-21 09:30:00+05:30",
+          "prev": 91.01,
+          "date": "2026-07-22 09:30:00+05:30",
+          "value": 94.07,
+          "change_pct": 3.36,
+          "corr_20d": -0.266,
+          "relationship": "inverse",
+          "implication": "neutral"
+        },
+        {
+          "name": "USDINR",
+          "prev_date": "2026-07-21 04:30:00+05:30",
+          "prev": 96.49,
+          "date": "2026-07-22 04:30:00+05:30",
+          "value": 96.34,
+          "change_pct": -0.15,
+          "corr_20d": -0.049,
+          "relationship": "inverse",
+          "implication": "neutral"
+        }
+      ],
+      "weights": {
+        "sr": 18,
+        "gap": 8,
+        "pcr": 14,
+        "momentum": 8,
+        "ma": 8,
+        "structure": 8,
+        "oi": 14,
+        "drivers": 14,
+        "vix": 8
+      },
+      "disclaimer": "Educational/informational only. Not SEBI-registered investment advice.",
+      "oi": {
+        "buildup": "neutral",
+        "implication": "neutral",
+        "oi": 15020200,
+        "oi_chg_pct": 0.0
+      },
+      "basis": {
+        "pct": 0.069,
+        "reading": "premium",
+        "future_price": 23886,
+        "spot_price": 23869.6
+      },
+      "trade_plan": null
+    }
+  ],
+  "disclaimer": "Educational/informational only. Not SEBI-registered investment advice."
+}
