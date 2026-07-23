@@ -29,6 +29,31 @@
 | `KITE_PASSWORD` | Your Kite login password |
 | `KITE_TOTP_SECRET` | The **TOTP secret** (base32 string) from your 2FA setup — *not* the 6-digit code. If you set up 2FA with an authenticator app, this is the key shown when you enabled it. If you only have the QR/app, you can re-enable external 2FA in Kite → Settings to reveal the secret. |
 
+### What is the TOTP secret, and how do I get it?
+
+**TOTP** = Time-based One-Time Password. There are **two different things** with similar
+names — this is the #1 mix-up:
+
+| | What it looks like | Use it? |
+| --- | --- | --- |
+| **Live 6-digit code** | `482913` — changes every 30 seconds | ❌ Never store this — it's already expired by the time it's used |
+| **Secret key** (what we need) | `JBSW Y3DP EHPK 3PXP` — a long fixed base32 string, 16–32 letters/digits, shown **once** when you set up 2FA | ✅ This is `KITE_TOTP_SECRET` |
+
+MarketDawn uses the fixed **secret key** to generate valid 6-digit codes itself, on demand,
+so it can log in to Kite unattended each morning.
+
+How to get it on Zerodha Kite:
+1. Log in to **https://kite.zerodha.com** → click your profile (top-right) → **Settings**.
+2. Open **Password & security** → find **External TOTP / App-based 2FA**.
+3. Click **Enable** (or **Reset**, if already enabled but you never saved the key).
+4. Kite shows a **QR code** and a **secret key** (often labelled "enter this key manually"
+   / "setup key"). **Copy that secret key** — that is `KITE_TOTP_SECRET`.
+5. Also scan the QR with an authenticator app (Google Authenticator / Authy) so you can
+   still log in manually.
+
+If you already use app-based 2FA but didn't save the key, just **Reset TOTP** in step 3 —
+Kite will show a fresh QR + secret key to copy.
+
 ## 3. Store the secrets ENCRYPTED (no plaintext file)
 
 Secrets are **not** kept in `.env`. Instead, run the secure setup command — it prompts for

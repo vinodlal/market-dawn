@@ -10,9 +10,23 @@ Nothing is written to disk in plaintext or committed to git.
 from __future__ import annotations
 
 import getpass
+import re
 import sys
 
 from . import credentials as c
+
+_B32 = re.compile(r"[A-Z2-7]+")
+
+
+def _totp_warning(raw: str) -> str | None:
+    """Heuristic check: does this look like a base32 TOTP secret, or a mistake
+    (e.g. the live 6-digit code, or a value with stray characters)?"""
+    cleaned = "".join(_B32.findall(raw.upper()))
+    if raw.strip().isdigit() and len(raw.strip()) <= 8:
+        return "looks like a 6-digit live code, not the secret key — see SETUP.md"
+    if len(cleaned) < 16:
+        return "too short / has non-base32 characters to be a real TOTP secret key"
+    return None
 
 
 def _mask(v: str | None) -> str:
@@ -53,6 +67,12 @@ def main(argv: list[str] | None = None) -> int:
             if req and not existing:
                 print(f"  [!] {name} is required - still unset.")
             continue
+        if name == "KITE_TOTP_SECRET":
+            val = re.sub(r"[^A-Za-z2-7]", "", val).upper()  # strip spaces/dashes, normalize case
+            warn = _totp_warning(val)
+            if warn:
+                print(f"  [!] Warning: this value {warn}. Saved anyway, but login will "
+                      f"likely fail — see SETUP.md 'What is the TOTP secret'.")
         c.set_secret(name, val)
         print(f"  [x] {name} saved (encrypted).")
 
