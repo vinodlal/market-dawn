@@ -1,0 +1,37 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MarketDawn">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1e4d"/>
+      <stop offset="0.42" stop-color="#462f7a"/>
+      <stop offset="0.72" stop-color="#c94f7c"/>
+      <stop offset="1" stop-color="#ff9a4d"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4cf"/>
+      <stop offset="0.55" stop-color="#ffd15c"/>
+      <stop offset="1" stop-color="#ff9b3d"/>
+    </radialGradient>
+    <clipPath id="squircle"><rect x="0" y="0" width="512" height="512" rx="112" ry="112"/></clipPath>
+  </defs>
+  <g clip-path="url(#squircle)">
+    <rect x="0" y="0" width="512" height="512" fill="url(#sky)"/>
+    <g stroke="#ffe08a" stroke-width="7" stroke-linecap="round" opacity="0.45">
+      <line x1="256" y1="300" x2="256" y2="150"/>
+      <line x1="256" y1="300" x2="336" y2="176"/>
+      <line x1="256" y1="300" x2="176" y2="176"/>
+      <line x1="256" y1="300" x2="404" y2="230"/>
+      <line x1="256" y1="300" x2="108" y2="230"/>
+      <line x1="256" y1="300" x2="150" y2="120"/>
+      <line x1="256" y1="300" x2="362" y2="120"/>
+    </g>
+    <circle cx="256" cy="300" r="112" fill="url(#sun)"/>
+    <g fill="#3dd0a6" stroke="#3dd0a6" stroke-width="6">
+      <line x1="96" y1="372" x2="96" y2="436"/><rect x="76" y="384" width="40" height="40" rx="4"/>
+      <line x1="168" y1="348" x2="168" y2="420"/><rect x="148" y="360" width="40" height="44" rx="4"/>
+      <line x1="240" y1="320" x2="240" y2="400"/><rect x="220" y="332" width="40" height="52" rx="4"/>
+      <line x1="312" y1="288" x2="312" y2="372"/><rect x="292" y="300" width="40" height="56" rx="4"/>
+      <line x1="384" y1="250" x2="384" y2="344"/><rect x="364" y="262" width="40" height="66" rx="4"/>
+    </g>
+    <rect x="0" y="430" width="512" height="82" fill="#ff9a4d" opacity="0.18"/>
+  </g>
+</svg>

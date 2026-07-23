@@ -25,8 +25,9 @@ Full plan: `~/.claude/plans/this-is-a-new-humble-hamster.md`.
 ## Directives (see plan)
 - **Data accuracy first** — no source is used for signals until `verify_accuracy` PASSes.
 - **All timestamps IST** (`Asia/Kolkata`), stored/served with an explicit display layer.
-- **Credentials never leak** — secrets only in `.env` (gitignored) / CI secrets / host env;
-  gitleaks pre-commit; browser never sees keys.
+- **Credentials never leak** — secrets stored **encrypted in the OS keyring** via
+  `core/security/` (set with `python -m core.security.setup_credentials`); env vars for
+  CI/host. No plaintext `.env` for secrets; gitleaks pre-commit; browser never sees keys.
 - **Token-efficient** — deterministic engine; LLM optional (Haiku + cache, headlines-only);
   small modules, compact test reports, config-driven weights.
 - **Milestone-gated** — build → test → confirm before the next (M0…M9).
