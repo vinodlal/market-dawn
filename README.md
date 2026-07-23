@@ -1,14 +1,23 @@
-# Bank Nifty Predictor
+# MarketDawn
 
-A fully-automated, rule-based Bank Nifty daily read. Every trading afternoon a
-GitHub Action pulls market data via **Kite Connect**, runs a heuristic analysis
-engine, and commits a `Buy Zone` / `Sell Zone` / `Neutral` recommendation as JSON.
-An installable PWA (served from GitHub Pages) shows the current call plus a
-calendar of historical accuracy.
+A morning-first, self-improving **trading brief, recommender & paper-trading engine** for
+Indian markets — Bank Nifty, Nifty, stocks, and options. It produces a pre-open market
+brief, OI-driven futures calls, per-stock technical analysis with holding/futures/BTST
+strategies, and a paper-trading ledger that grades every call against the actual tape and
+auto-tunes its weights. **Signals only — it never places orders.**
+
+- Engine & build plan: see [`CLAUDE.md`](CLAUDE.md) and the approved milestone plan.
+- The engine (`core/`) is deterministic Python; the v1 Bank-Nifty pipeline in `scripts/`,
+  `docs/`, and `data/` is kept as the **reference/baseline** to reconcile against.
 
 > **Educational/informational only. Not SEBI-registered investment advice.**
-> Crude & USDINR are futures proxies, not spot rates. This is a rule-based
-> heuristic, not a trained predictive model.
+> Crude & USDINR use futures proxies, not spot rates. This is a rule-based system,
+> not a trained predictive model.
+
+---
+
+> ⚙️ **Below this line is the v1 reference documentation** for the original Bank Nifty
+> pipeline. MarketDawn generalizes this logic; the v1 flow still works as documented.
 
 ---
 

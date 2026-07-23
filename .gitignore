@@ -9,9 +9,25 @@ env/
 # Secrets — never commit tokens or credentials
 .env
 *.env
+.env.*
+!.env.example
+*.pem
+*.key
 access_token.txt
 kite_access_token.json
 secrets.json
+
+# Web (Next.js) build artifacts
+node_modules/
+web/node_modules/
+web/.next/
+web/out/
+
+# Local data cache / db (history JSON in data/ stays committed as reference)
+data/cache/
+data/app.db
+*.parquet
+.pytest_cache/
 
 # OS / editor
 .DS_Store
