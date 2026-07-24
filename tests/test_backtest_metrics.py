@@ -24,6 +24,22 @@ def test_summarize_known_values():
     assert out["equity_curve_r"] == [2.0, 1.0, 2.5]
 
 
+def test_summarize_zone_hit_rate():
+    rows = [
+        {"outlier": False, "directional_correct": None, "r_multiple": None, "zone_hit": True},
+        {"outlier": False, "directional_correct": None, "r_multiple": None, "zone_hit": True},
+        {"outlier": False, "directional_correct": None, "r_multiple": None, "zone_hit": False},
+        {"outlier": True, "directional_correct": None, "r_multiple": None, "zone_hit": False},  # excluded
+    ]
+    out = summarize(rows)
+    assert out["zone_hit_rate"] == round(2 / 3, 3)
+
+
+def test_summarize_zone_hit_rate_none_when_absent():
+    rows = [{"outlier": False, "directional_correct": True, "r_multiple": 1.0}]
+    assert summarize(rows)["zone_hit_rate"] is None
+
+
 def test_summarize_empty_rows():
     out = summarize([])
     assert out["days"] == 0

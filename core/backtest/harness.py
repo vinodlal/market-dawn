@@ -44,6 +44,24 @@ def _is_outlier(move_pct: float, closes_so_far: pd.Series) -> bool:
     return abs(move_pct) > threshold
 
 
+def _active_zone(sig: dict) -> tuple[float, float]:
+    """The predicted price zone for the call, matching v1's semantics
+    exactly: Long -> [support, pivot], Short -> [pivot, resistance],
+    Neutral -> the full [support, resistance] span (no directional bet, but
+    still a testable "did price stay in the expected range" claim)."""
+    lv = sig["levels"]
+    if sig["bias"] == "Long":
+        return tuple(sorted([lv["support"], lv["pivot"]]))
+    if sig["bias"] == "Short":
+        return tuple(sorted([lv["pivot"], lv["resistance"]]))
+    return tuple(sorted([lv["support"], lv["resistance"]]))
+
+
+def _zone_hit(low: float, high: float, zone: tuple[float, float]) -> bool:
+    z_lo, z_hi = zone
+    return not (high < z_lo or low > z_hi)
+
+
 def _simulate_trade_outcome(df: pd.DataFrame, t: int, plan: dict, max_days: int = 10) -> float | None:
     """Walk forward day-by-day from t+1: whichever of stop/target is touched
     first wins; if both touch the same day, conservatively assume stop first;
@@ -74,7 +92,9 @@ def walk_forward(symbol: str, df: pd.DataFrame, vix_df: pd.DataFrame | None = No
                   drivers: dict[str, pd.DataFrame] | None = None,
                   kind: str = "index", weights: dict | None = None,
                   min_window: int = 210, horizon_days: int = 1,
-                  trade_max_days: int = 10) -> list[dict]:
+                  trade_max_days: int = 10,
+                  buy_trigger: int = 65, sell_trigger: int = 35,
+                  min_confidence: str | None = None) -> list[dict]:
     weights = weights or BACKTEST_WEIGHTS
     rows = []
     for t in range(min_window, len(df) - horizon_days):
@@ -94,7 +114,8 @@ def walk_forward(symbol: str, df: pd.DataFrame, vix_df: pd.DataFrame | None = No
                     drivers_hist[dname] = dv.reset_index(drop=True)
 
         sig = signal_mod.analyze(symbol, kind, hist, vix_df=vix_hist, drivers=drivers_hist,
-                                  weights=weights)
+                                  weights=weights, buy_trigger=buy_trigger, sell_trigger=sell_trigger,
+                                  min_confidence=min_confidence)
 
         now_close = float(df["close"].iloc[t])
         future_close = float(df["close"].iloc[t + horizon_days])
@@ -118,11 +139,17 @@ def walk_forward(symbol: str, df: pd.DataFrame, vix_df: pd.DataFrame | None = No
 
         outlier = _is_outlier(move_pct, df["close"].iloc[:t + 1])
 
+        future_low = float(df["low"].iloc[t + horizon_days])
+        future_high = float(df["high"].iloc[t + horizon_days])
+        zone = _active_zone(sig)
+        zone_hit = _zone_hit(future_low, future_high, zone)
+
         rows.append({
             "date": str(cur_date), "score": sig["score"], "bias": sig["bias"],
             "confidence": sig["confidence"], "close": round(now_close, 2),
             "next_close": round(future_close, 2), "move_pct": round(move_pct, 3),
             "directional_correct": directional_correct, "r_multiple": r_multiple,
+            "zone_hit": zone_hit, "zone": [round(zone[0], 2), round(zone[1], 2)],
             "outlier": outlier,
         })
     return rows
