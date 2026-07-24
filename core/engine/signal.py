@@ -58,7 +58,10 @@ def analyze(symbol: str, kind: str, df: pd.DataFrame, *,
             option_chain: dict | None = None,
             oi_buildup: str | None = None,
             horizon: str = "swing",
-            weights: dict[str, float] | None = None) -> dict:
+            weights: dict[str, float] | None = None,
+            buy_trigger: int = 65,
+            sell_trigger: int = 35,
+            min_confidence: str | None = None) -> dict:
     """kind: 'index' | 'future' | 'equity'. df must have >= ~30 rows for a
     meaningful MA/RSI/structure read; pivots/gaps work with fewer.
 
@@ -136,8 +139,13 @@ def analyze(symbol: str, kind: str, df: pd.DataFrame, *,
         subscores["oi"] = score_mod.oi_subscore(oi_buildup)
 
     composite = score_mod.composite_score(subscores, weights, damp_flags=damp_flags)
-    bias = decision.classify_bias(composite)
+    bias = decision.classify_bias(composite, buy_trigger=buy_trigger, sell_trigger=sell_trigger)
     confidence = decision.confidence_from_agreement(subscores, weights, bias)
+
+    if min_confidence is not None:
+        rank = {"low": 0, "medium": 1, "high": 2}
+        if rank.get(confidence, 0) < rank.get(min_confidence, 0):
+            bias = "Neutral"  # below the confidence bar -> don't act on it, still report the read
 
     extra_reasons = [f"Regime: {market_regime}"
                       + (f" (ADX {adx_val:.0f})" if adx_val is not None else "")

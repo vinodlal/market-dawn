@@ -9,6 +9,10 @@ def summarize(rows: list[dict], exclude_outliers: bool = True) -> dict:
     dir_acc = (sum(1 for r in dir_rows if r["directional_correct"]) / len(dir_rows)
                if dir_rows else None)
 
+    zone_rows = [r for r in scored if "zone_hit" in r]
+    zone_hit_rate = (sum(1 for r in zone_rows if r["zone_hit"]) / len(zone_rows)
+                      if zone_rows else None)
+
     r_values = [r["r_multiple"] for r in scored if r["r_multiple"] is not None]
     wins = [r for r in r_values if r > 0]
     losses = [r for r in r_values if r <= 0]
@@ -30,6 +34,7 @@ def summarize(rows: list[dict], exclude_outliers: bool = True) -> dict:
         "days": len(rows), "scored_days": len(scored),
         "outliers": sum(1 for r in rows if r["outlier"]),
         "directional_accuracy": round(dir_acc, 3) if dir_acc is not None else None,
+        "zone_hit_rate": round(zone_hit_rate, 3) if zone_hit_rate is not None else None,
         "trades": len(r_values),
         "win_rate": round(win_rate, 3) if win_rate is not None else None,
         "avg_r": round(avg_r, 3) if avg_r is not None else None,

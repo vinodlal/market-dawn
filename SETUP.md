@@ -91,3 +91,24 @@ python -m core.security.setup_credentials --status
    .venv\Scripts\python.exe -m core.alerts.get_chat_id
    ```
    (after step 2 — the bot needs at least one message from you first).
+
+## 5. Daily paper-trading automation (desktop-based, Windows Task Scheduler)
+
+Runs `core/paper/run_daily.py` automatically every weekday at **16:00 IST** (after NSE
+close, so the day's OHLC is final): settles any open paper trades against today's actual
+close, then opens new ones from today's live signals across Bank Nifty/Nifty futures + a
+stock basket. Idempotent — running it twice in a day (or a missed run catching up) will
+not open duplicate positions for a symbol that already has one open.
+
+Requires the desktop to be **on** (not asleep) at 16:00 IST for the task to fire.
+
+- **Task name:** `MarketDawn Daily Paper Trading` (Task Scheduler, root folder)
+- **Logs:** `data\logs\daily_paper_trading.log` (gitignored, local only)
+- **To check it ran:** `Get-ScheduledTaskInfo -TaskName "MarketDawn Daily Paper Trading"`
+  (shows `LastRunTime` / `LastTaskResult` — `0` means success)
+- **To run it manually:** `scripts_run\daily_paper_trading.bat`
+- **To pause/remove:**
+  ```powershell
+  Disable-ScheduledTask -TaskName "MarketDawn Daily Paper Trading"   # pause
+  Unregister-ScheduledTask -TaskName "MarketDawn Daily Paper Trading" -Confirm:$false  # remove
+  ```
